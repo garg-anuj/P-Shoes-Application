@@ -217,7 +217,7 @@ BootsBtn.addEventListener("click",()=>
         // Filtered_Array_Data= []
         console.log(Filtered_Array_Data);
 
-        All_Shoes_Data.map((ele,index)=>
+        Filtered_Array_Data.map((ele,index)=>
         {
             const {Name,Category,Color,Price,MRP,Tag,Img} = ele;
             showCard.innerHTML += `
@@ -258,11 +258,12 @@ let Loafers_Array_Data =  All_Shoes_Data.filter((ele)=>{return ele.Type == "Loaf
 
 LoafersBtn.addEventListener("click",()=>
 {
-    if(LoafersBtn.title === "Loafers_filter_off"){
+    if(LoafersBtn.title === "loafers_filter_off"){
+        console.log('loafer if')
         LoafersBtn.classList.toggle("i_active")
         LoafersBtn.classList.toggle("bi-toggle2-off")
         LoafersBtn.classList.toggle("bi-toggle2-on")
-        LoafersBtn.title = "Loafers_filter_on";
+        LoafersBtn.title = "loafers_filter_on";
         showCard.innerHTML=''
 
       
@@ -296,7 +297,7 @@ LoafersBtn.addEventListener("click",()=>
         LoafersBtn.classList.toggle("i_active")
         LoafersBtn.classList.toggle("bi-toggle2-off")
         LoafersBtn.classList.toggle("bi-toggle2-on")
-        LoafersBtn.title = "Loafers_filter_off";
+        LoafersBtn.title = "loafers_filter_off";
 
         Filtered_Array_Data =  Filtered_Array_Data.filter((ele)=>
         {
@@ -306,7 +307,7 @@ LoafersBtn.addEventListener("click",()=>
         // Filtered_Array_Data= []
         console.log(Filtered_Array_Data);
 
-        All_Shoes_Data.map((ele,index)=>
+        Filtered_Array_Data.map((ele,index)=>
         {
             const {Name,Category,Color,Price,MRP,Tag,Img} = ele;
             showCard.innerHTML += `
@@ -335,6 +336,76 @@ LoafersBtn.addEventListener("click",()=>
 
 
 
+
+
+
+// --------------------------------------------------------Price Range------------------------------------------------
+
+
+
+
+
+
+
+
+//-------------------------------------------------------Colors Shoes------------------------------------------------
+
+const color = ['white', 'gray-white', 'yellow', 'yellow-black', 'orange', 'green', 'sky-blue', 'pink', 'red', 'blue', 'gray-black', 'brown', 'black' ];
+  
+// console.log( Array.from(document.getElementsByClassName('color')) );
+Array.from(document.getElementsByClassName('color')).map((ele,index)=>{
+    // console.log(ele,index)
+
+    ele.addEventListener('click',()=>{
+       
+        let color_Array_Data = 
+        All_Shoes_Data.filter((el)=>
+            {
+                return el.ColorTag === color[index]
+            });
+
+        // console.log(color_Array_Data)
+        // renderCard(color_Array_Data)
+        showCard.innerHTML =''
+        color_Array_Data.map((ele,index)=>
+        {
+            
+            const {Name,Category,Color,Price,MRP,Tag,Img} = ele;
+            showCard.innerHTML += `
+                    <a href="#" class="card">
+                        <img src="${Img}" alt="${Name}">
+                        <h5 class="card_title">Nike Air Force 1 Mid QS</h5>
+                        <p>${Category}</p>
+                        <div class="price">
+                            <h5>Rs ${Price}</h5>
+                            <h5>MRP: <del>Rs ${MRP}</del></h5>
+                        </div>
+                        <div class="color_tag">
+                            <h6>Color 1</h6>
+                            <h6>${Tag}</h6>
+                        </div>
+                    </a>  
+                    `
+        })
+
+    });
+});
+
+
+//------------------------------------------------------- Shoes Sizes------------------------------------------------
+
+const Shoes_sizes =  [4, 7, 9, 6, 5, 8.5, 10, 11.5, 9.5, 8, 7.5];
+Array.from(document.getElementsByClassName('size')).map((ele,index)=>{
+
+    ele.addEventListener('click',()=>{
+        console.log("selected",ele.innerText,index,Shoes_sizes[index])
+        let Sizes_Array_Data =  All_Shoes_Data.filter((el)=>{ return el.Size8 == Shoes_sizes[index] });
+        
+        console.log(Sizes_Array_Data )
+        renderCard(Sizes_Array_Data)
+    })
+
+})
 
 
 
