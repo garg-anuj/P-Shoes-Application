@@ -152,17 +152,16 @@ header .brand_nav ul li:nth-child(4):hover {
   border-radius: 0px 0px 5px 5px;
   overflow: hidden;
 
-  transition: 1s linear;
+  transition: 0.1s linear;
 }
 
 .select_bx h5 {
-  /* border:1px solid green; */
   color: rgb(255, 255, 255, 0.8);
   padding: 5px;
 }
+
 .select_bx_active {
-  border: 1px solid green;
-  /* height: 100px; */
+  height: 100px;
   opacity: 1;
   padding: 5px;
 }

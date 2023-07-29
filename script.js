@@ -158,8 +158,8 @@ fetch('shoesData.json')
 
 // ----Boots-------
 
-const BootsBtn = document.getElementById('boots')
-const LoafersBtn = document.getElementById('loafers')
+const BootsBtn = document.getElementById('Boots')
+const LoafersBtn = document.getElementById('Loafer')
 // const{BootsBtn,LoafersBtn} = document.getElementById  //trying this method
 
 
@@ -169,11 +169,11 @@ let Boots_Array_Data =  All_Shoes_Data.filter((ele)=>{return ele.Type == "Boots"
 
 BootsBtn.addEventListener("click",()=>
 {
-    if(BootsBtn.title === "boots_filter_off"){
+    if(BootsBtn.title === "Boots_filter_off"){
         BootsBtn.classList.toggle("i_active")
         BootsBtn.classList.toggle("bi-toggle2-off")
         BootsBtn.classList.toggle("bi-toggle2-on")
-        BootsBtn.title = "boots_filter_on";
+        BootsBtn.title = "Boots_filter_on";
         showCard.innerHTML=''
 
       
@@ -207,7 +207,7 @@ BootsBtn.addEventListener("click",()=>
         BootsBtn.classList.toggle("i_active")
         BootsBtn.classList.toggle("bi-toggle2-off")
         BootsBtn.classList.toggle("bi-toggle2-on")
-        BootsBtn.title = "boots_filter_off";
+        BootsBtn.title = "Boots_filter_off";
 
         Filtered_Array_Data =  Filtered_Array_Data.filter((ele)=>
         {
@@ -258,12 +258,12 @@ let Loafers_Array_Data =  All_Shoes_Data.filter((ele)=>{return ele.Type == "Loaf
 
 LoafersBtn.addEventListener("click",()=>
 {
-    if(LoafersBtn.title === "loafers_filter_off"){
-        console.log('loafer if')
+    if(LoafersBtn.title === "Loafer_filter_off"){
+        console.log('Loafer if')
         LoafersBtn.classList.toggle("i_active")
         LoafersBtn.classList.toggle("bi-toggle2-off")
         LoafersBtn.classList.toggle("bi-toggle2-on")
-        LoafersBtn.title = "loafers_filter_on";
+        LoafersBtn.title = "Loafer_filter_on";
         showCard.innerHTML=''
 
       
@@ -297,7 +297,7 @@ LoafersBtn.addEventListener("click",()=>
         LoafersBtn.classList.toggle("i_active")
         LoafersBtn.classList.toggle("bi-toggle2-off")
         LoafersBtn.classList.toggle("bi-toggle2-on")
-        LoafersBtn.title = "loafers_filter_off";
+        LoafersBtn.title = "Loafer_filter_off";
 
         Filtered_Array_Data =  Filtered_Array_Data.filter((ele)=>
         {

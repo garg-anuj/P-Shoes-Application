@@ -1,0 +1,20 @@
+function filterCard(filter_btn , filter_title_type, All_Shoes_Data){
+    let Filtered_Array_Data1;
+    
+    let Shorted_Array_Data =  All_Shoes_Data.filter((ele)=>{return ele.Type == filter_title_type})
+    
+        if(filter_btn.title === `${filter_title_type}_filter_off`){
+            agr click krne pr Element kaa title match hota hai toh  hm ko fetch krwayenge
+            or use newArray me concat krwa denge 
+            
+      
+        }else{
+            agr click krne pr Element kaa title match nhi hota hai toh  hm check krnge ki 
+            Filtered_Array_Data data emplty hai yaa nhi yaa fir joh data add hua hai btnon krne pr us particular 
+            data koo remove krawynge Filtered_Array_Data is arrray me se
+        
+        }
+        in the last Filtered_Array_Data isme joh data hai usko Reder krwadenge
+
+    }
+        
