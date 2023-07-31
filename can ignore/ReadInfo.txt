@@ -1,0 +1,61 @@
+renderCard(dataInfo, sortTitleData):-
+
+renderCard(dataInfo, sortTitleData){
+    isme pehle check krenge ki koi title hai chage krne ke liye yaa nhi if their is title then we will change it 
+    otherwise by default our title will Be shoes.
+
+    if we get any array/shoeDataArray toh useme hm map function lga lg html cards me data acces krke sare crds koo showCard container me 
+    pass krwa denge showCard.innerHTML = Card
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+function filterCard(filterBtn , filterTitleType){
+    let Filtered_Array_Data;
+    
+    let Shorted_Array_Data =  All_Shoes_Data.filter((ele)=>{return ele.Type == filter_title_type})
+    
+        if(filter_btn.title === `${filter_title_type}_filter_off`){
+            agr click krne pr Element kaa title match hota hai toh  hm ko fetch krwayenge
+            or use newArray me concat krwa denge 
+            
+      
+        }else{
+            agr click krne pr Element kaa title match nhi hota hai toh  hm check krnge ki 
+            Filtered_Array_Data data emplty hai yaa nhi yaa fir joh data add hua hai btnon krne pr us particular 
+            data koo remove krawynge Filtered_Array_Data is arrray me se
+        
+        }
+        in the last Filtered_Array_Data isme joh data hai usko Reder krwadenge renderCard(dataInfo, sortTitleData) function ki help se
+
+    }
+
+    ----------------------------------------------
+
+    const arrayIdData = ['Boots', 'Loafer','Air_Force', 'Air_Max', 'Zoom_Rival', 'Pegasus', 'Nike_Dunk' ];  //Filters Btn Id
+    const arrayTitlesData = ["Boots", "Loafer", "Air Force", "Air Max", "Zoom Rival", "Pegasus", "Nike Dunk"] //Filters Btn Title
+
+    instead of making multiple variable(such as BootsBtn,LoaferBtn, AirForceBtn...Etc.) to store HTmlButtonElement and apply addEventListener on Each and 
+    evet HtmlBtn .
+
+    to isko solve krne ke liye hm ek array bnayenge or Sare Html Element Ki Id array me store kr lennge ek sequence me same sequenceme us particular 
+    btn pr click krne pr joo title aye paralley dusre array me titles Store Kr lenge 
+
+    then un sare btn ko map function se acess kr lenge then we will apply add EventListener on it / but also check about Memory space 
+    to solve this we can use Event Delegation;
+
+    array methods kaa use krke benifits yeah hoga ki in functure new company ke shoes kaa btn btn add krna hai to hme sirf array me btn ki Id
+    or uska title dalna pdega bs 
+    or yeah array data hm Json file ki properties me add kr denge 
+
+    let filteredArrayData =[];
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+        
