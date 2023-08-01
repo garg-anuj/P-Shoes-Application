@@ -9,214 +9,220 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h4>FOOTBAaaLL <span>SPORT</span></h5>
+    <div id="allContent">
+        <header>
+            <nav>
+                <h4>FOOTBAaaLL <span>SPORT</span></h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">  <i class="bi bi-envelope"></i> EMAIL SUBSCRIPTION</a></li>
+                        <li><a href="#"> <i class="bi bi-cart4"></i> CART</a></li>    
+                    </ul>
+            </nav>
+           
+        
+            <div class="brand_nav ">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">  <i class="bi bi-envelope"></i> EMAIL SUBSCRIPTION</a></li>
-                    <li><a href="#"> <i class="bi bi-cart4"></i> CART</a></li>    
-                </ul>
-        </nav>
-       
-    
-        <div class="brand_nav ">
-            <ul>
-                <li id="selectCategory">select category   
-                    <i class="bi bi-chevron-down"></i>
-                    <div class = "select_bx ">
-                        <h5>Man</h5>
-                        <h5>Women</h5>
-                        <h5>Kid's</h5>
-                    </div>
-                 </li>
-                
-                <li><a><img src="img/nike logo.png" alt=""></a></li>
-                <li><a>GO TO PRODUCER ZONE</a></li>
-                <li><a><img src="img/adidas logo.png" alt=""></a></li>
-                <li><a>What are you Looking for</a></li>
-                <li><i class="bi bi-search"></i></li> 
-            </ul>
-        </div>
-
-        <div class = "li_bx">
-            <ul>
-                <li>Newest Sneakers</li>
-                <li>Shoes</li>
-                <li>Life Style</li>
-                <li>Running</li>
-                <li>BasketBall</li>
-                <li>Jordan</li>
-                <li>Football</li>
-                <li>Gym & Traning</li>
-                <li>Tennis</li>
-                <li>Shoes Sale</li>
-            </ul>
-        </div>
-    </header>
-
-
-    <section>
-<!-- --------------------Aside filters-------------------------------------------- -->
-        <aside>
-            <div class="filter_bx">
-                <h3 class="filter"><i class="bi bi-funnel-fill"></i>Filter : Product</h3>
-                <p class="total_shoes">Men's Shoes <span>269</span></p>
-
-
-
-                <div class="shoes_check">
-                    <div class="shoes_checked">
-                        <h6>Shoes</h6> <i  class="bi bi-node-minus-fill"></i>
-                    </div>
-                    <!-- <i class="bi bi-toggle2-on"></i> -->
-
-                    <li>Boots <i id="Boots" class="bi bi-toggle2-off" title="Boots_filter_off"></i></li>
-                    <li>Loafer<i id="Loafer"class="bi bi-toggle2-off" title="Loafer_filter_off"></i></li>
-                </div>
-
-                
-                <!-- ------Icons------------ -->
-
-                <div class="shoes_check">
-                    <div class="shoes_checked"><h6>Icons</h6> <i class="bi bi-node-minus-fill"></i></div>
-                    <li>Air Force <i id="Air_Force" class="bi bi-toggle2-off" title="Air Force_filter_off"></i> </li>
-                    <li>Air Max <i id="Air_Max" class="bi bi-toggle2-off" title="Air Max_filter_off"></i> </li>
-                    <li>Zoom Rival <i id="Zoom_Rival" class="bi bi-toggle2-off" title="Zoom Rival_filter_off"></i> </li>
-                    <li>Pegasus <i id="Pegasus" class="bi bi-toggle2-off" title="Pegasus_filter_off"></i> </li>
-                    <li>Nike Dunk <i id="Nike_Dunk" class="bi bi-toggle2-off" title="Nike Dunk_filter_off"></i> </li>
-                </div>
-
-                <!-- ------Price------------ -->
-                <div class="shoes_check">
-                    <div class="shoes_checked"><h6>Price</h6> <i class="bi bi-node-minus-fill"></i></div>
-
-                    <div class="input_p">
-                        <div class="input1">
-                            <input type="range" id="1" min="1" max="100">
-                            <i class="bi bi-pause-btn-fill" id="inputid1"></i>
+                    <li id="selectCategory">select category   
+                        <i class="bi bi-chevron-down"></i>
+                        <div class = "select_bx ">
+                            <h5>Man</h5>
+                            <h5>Women</h5>
+                            <h5>Kid's</h5>
                         </div>
-
-                        <div class="input1">
-                            <input type="range" id="2" min="1" max="100">
-                            <i class="bi bi-pause-btn-fill" id="inputid2"></i>
+                     </li>
+                    
+                    <li><a><img src="img/nike logo.png" alt=""></a></li>
+                    <li><a>GO TO PRODUCER ZONE</a></li>
+                    <li><a><img src="img/adidas logo.png" alt=""></a></li>
+                    <li><a>What are you Looking for</a></li>
+                    <li><i class="bi bi-search search"></i></li> 
+                </ul>
+            </div>
+    
+           
+    
+            <div class = "li_bx">
+                <ul>
+                    <li>Newest Sneakers</li>
+                    <li>Shoes</li>
+                    <li>Life Style</li>
+                    <li>Running</li>
+                    <li>BasketBall</li>
+                    <li>Jordan</li>
+                    <li>Football</li>
+                    <li>Gym & Traning</li>
+                    <li>Tennis</li>
+                    <li>Shoes Sale</li>
+                </ul>
+            </div>
+        </header>
+    
+    
+        <section id="main_container">
+    <!-- --------------------Aside filters-------------------------------------------- -->
+            <aside>
+                <div class="filter_bx">
+                    <h3 class="filter"><i class="bi bi-funnel-fill"></i>Filter : Product</h3>
+                    <p class="total_shoes">Men's Shoes <span>269</span></p>
+    
+    
+    
+                    <div class="shoes_check">
+                        <div class="shoes_checked">
+                            <h6>Shoes</h6> <i  class="bi bi-node-minus-fill"></i>
+                        </div>
+                        <!-- <i class="bi bi-toggle2-on"></i> -->
+    
+                        <li>Boots <i id="Boots" class="bi bi-toggle2-off" title="Boots_filter_off"></i></li>
+                        <li>Loafer<i id="Loafer"class="bi bi-toggle2-off" title="Loafer_filter_off"></i></li>
+                    </div>
+    
+                    
+                    <!-- ------Icons------------ -->
+    
+                    <div class="shoes_check">
+                        <div class="shoes_checked"><h6>Icons</h6> <i class="bi bi-node-minus-fill"></i></div>
+                        <li>Air Force <i id="Air_Force" class="bi bi-toggle2-off" title="Air Force_filter_off"></i> </li>
+                        <li>Air Max <i id="Air_Max" class="bi bi-toggle2-off" title="Air Max_filter_off"></i> </li>
+                        <li>Zoom Rival <i id="Zoom_Rival" class="bi bi-toggle2-off" title="Zoom Rival_filter_off"></i> </li>
+                        <li>Pegasus <i id="Pegasus" class="bi bi-toggle2-off" title="Pegasus_filter_off"></i> </li>
+                        <li>Nike Dunk <i id="Nike_Dunk" class="bi bi-toggle2-off" title="Nike Dunk_filter_off"></i> </li>
+                    </div>
+    
+                    <!-- ------Price------------ -->
+                    <div class="shoes_check">
+                        <div class="shoes_checked"><h6>Price</h6> <i class="bi bi-node-minus-fill"></i></div>
+    
+                        <div class="input_p">
+                            <div class="input1">
+                                <input type="range" id="1" min="1" max="100">
+                                <i class="bi bi-pause-btn-fill" id="inputid1"></i>
+                            </div>
+    
+                            <div class="input1">
+                                <input type="range" id="2" min="1" max="100">
+                                <i class="bi bi-pause-btn-fill" id="inputid2"></i>
+                            </div>
+                        </div>  
+    
+                        <div class="input_price">
+                            <h6>2000</h6>
+                            <h6>4000</h6>
+                        </div>
+    
+                    </div>
+    
+                    <!-- ------Shoes COLORS------------ -->
+    
+                    <div class="shoes_check">
+                        <div class="shoes_checked"><h6>COLOR</h6> <i class="bi bi-node-minus-fill"></i></div>
+                
+                        <div class="color_bx">
+    
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="color"></h6>
+                            <h6 class="colors"></h6>
+            
+                        </div>
+                    </div>     
+                    <!-- ------Shoes Size------------ -->
+    
+                    <div class="shoes_check">
+                        <div class="shoes_checked"><h6>Size</h6> <i class="bi bi-node-minus-fill"></i></div>
+                
+                        <div class="size_bx">
+    
+                            <h6 class="size">4</h6>
+                            <h6 class="size">7</h6>
+                            <h6 class="size">9</h6>
+                            <h6 class="size">6</h6>
+                            <h6 class="size">5</h6>
+                            <h6 class="size">8.5</h6>
+                            <h6 class="size">10</h6>
+                            <h6 class="size">11.5</h6>
+                            <h6 class="size">9.5</h6>
+                            <h6 class="size">8</h6>
+                            <h6 class="size">7.5</h6>
+            
                         </div>
                     </div>  
-
-                    <div class="input_price">
-                        <h6>2000</h6>
-                        <h6>4000</h6>
-                    </div>
-
-                </div>
-
-                <!-- ------Shoes COLORS------------ -->
-
-                <div class="shoes_check">
-                    <div class="shoes_checked"><h6>COLOR</h6> <i class="bi bi-node-minus-fill"></i></div>
-            
-                    <div class="color_bx">
-
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="color"></h6>
-                        <h6 class="colors"></h6>
-        
-                    </div>
-                </div>     
-                <!-- ------Shoes Size------------ -->
-
-                <div class="shoes_check">
-                    <div class="shoes_checked"><h6>Size</h6> <i class="bi bi-node-minus-fill"></i></div>
-            
-                    <div class="size_bx">
-
-                        <h6 class="size">4</h6>
-                        <h6 class="size">7</h6>
-                        <h6 class="size">9</h6>
-                        <h6 class="size">6</h6>
-                        <h6 class="size">5</h6>
-                        <h6 class="size">8.5</h6>
-                        <h6 class="size">10</h6>
-                        <h6 class="size">11.5</h6>
-                        <h6 class="size">9.5</h6>
-                        <h6 class="size">8</h6>
-                        <h6 class="size">7.5</h6>
-        
-                    </div>
-                </div>  
-                
-                
-
-            </div>
-        </aside>
-        <!----------------Sort By Nav----------------------------- -->
+                    
+                    
     
-            <div class="shoes_bx">
-                <nav><h6>Man <i class="bi bi-chevron-right"></i> Nike <i class="bi bi-chevron-right"></i> <span>All Shoes</span> </h6></nav>
-                
-                
-                <!----------------Sort By DropDown----------------------------- -->
-               
-                <section>
-                    <div class="title_sortby">
-                        <h4>Shoes</h4>
-                        <div class="select_sortby">
-                            <button id="sortby_btn">
-                                <h5>Sort By </h5>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-
-                            <div class="sortby_opt">
-                                    <li id="Newest">Newest</li>
-                                    <li id="All_Shoes">All Shoes</li>
-                                    <li id="Low">Low</li>
-                                    <li id="High">High</li>
+                </div>
+            </aside>
+            <!----------------Sort By Nav----------------------------- -->
+        
+                <div class="shoes_bx">
+                    <nav><h6>Man <i class="bi bi-chevron-right"></i> Nike <i class="bi bi-chevron-right"></i> <span>All Shoes</span> </h6></nav>
+                    
+                    
+                    <!----------------Sort By DropDown----------------------------- -->
+                   
+                    <section>
+                        <div class="title_sortby">
+                            <h4>Shoes</h4>
+                            <div class="select_sortby">
+                                <button id="sortby_btn">
+                                    <h5>Sort By </h5>
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+    
+                                <div class="sortby_opt">
+                                        <li id="Newest">Newest</li>
+                                        <li id="All_Shoes">All Shoes</li>
+                                        <li id="Low">Low</li>
+                                        <li id="High">High</li>
+                                </div>
                             </div>
+    
                         </div>
-
+                    </section>
+    
+                    <!-------------------------------Shoes  Card   container-------------------------------------------- -->
+    
+                    <div class="main_shoes_bx" id="main_Card">
+                        <!-- <a href="#" class="card">
+                            <img src="img/Nike Air Force 1 Mid QS.webp" alt="">
+                            <h5 class="card_title">Nike Air Force 1 Mid QS</h5>
+                            <p>Men Shoes</p>
+                            <div class="price">
+                                <h5>Rs 2599</h5>
+                                <h5>MRP: <del>Rs 6999</del></h5>
+                            </div>
+                            <div class="color_tag">
+                                <h6>Color 1</h6>
+                                <h6>Sustainable Materials</h6>
+                            </div>
+                        </a> -->
+    
                     </div>
-                </section>
-
-                <!-------------------------------Shoes  Card   container-------------------------------------------- -->
-
-                <div class="main_shoes_bx" id="main_Card">
-                    <!-- <a href="#" class="card">
-                        <img src="img/Nike Air Force 1 Mid QS.webp" alt="">
-                        <h5 class="card_title">Nike Air Force 1 Mid QS</h5>
-                        <p>Men Shoes</p>
-                        <div class="price">
-                            <h5>Rs 2599</h5>
-                            <h5>MRP: <del>Rs 6999</del></h5>
-                        </div>
-                        <div class="color_tag">
-                            <h6>Color 1</h6>
-                            <h6>Sustainable Materials</h6>
-                        </div>
-                    </a> -->
-
-                </div>
-
-                <!-- --------------------Pagination-------------------------------------------- -->
+    
+                    <!-- --------------------Pagination-------------------------------------------- -->
+                    
+                    <div class="pagination">
+                        <a href="#"><i class="bi bi-chevron-left"></i></a>
+                        <h6>Next Product Men</h6>
+                        <a href="#"><i class="bi bi-chevron-right"></i></a>
+                    </div>
                 
-                <div class="pagination">
-                    <a href="#"><i class="bi bi-chevron-left"></i></a>
-                    <h6>Next Product Men</h6>
-                    <a href="#"><i class="bi bi-chevron-right"></i></a>
                 </div>
-            
-            </div>
-    </section>
+        </section>
+    </div>
+
+
     
     <!-- <script src="script.js"></script> -->
     <!-- <script src="reduceCord_lvl2.js"></script> -->
