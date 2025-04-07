@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,200;0,8..30,400;0,8..30,900;1,8..30,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau:wght@200;300;400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -121,6 +122,7 @@ header .brand_nav ul li:nth-child(2) {
   height: auto;
   background: orangered;
 }
+
 header .brand_nav ul li:nth-child(4) {
   width: 130px;
 }
@@ -334,6 +336,7 @@ a .color_tag {
   font-size: 10px;
   opacity: 0.5;
 }
+
 .color_tag h6:nth-child(2) {
   font-size: 10px;
   color: orange;
@@ -442,7 +445,7 @@ aside .filter_bx {
 
 }
 
-.filter_bx .shoes_check li .i_active{
+.filter_bx .shoes_check li .i_active {
 
   color: orangered;
 }
@@ -522,42 +525,55 @@ aside .filter_bx {
 .color_bx h6:nth-child(1) {
   border: 3px solid white;
 }
+
 .color_bx h6:nth-child(2) {
   border: 3px solid #bdbdbe;
 }
+
 .color_bx h6:nth-child(3) {
   border: 3px solid #efc229;
 }
+
 .color_bx h6:nth-child(4) {
   border: 3px solid #cab43a;
 }
+
 .color_bx h6:nth-child(5) {
   border: 3px solid #ff854e;
 }
+
 .color_bx h6:nth-child(6) {
   border: 3px solid #40854e;
 }
+
 .color_bx h6:nth-child(7) {
   border: 3px solid #5686b6;
 }
+
 .color_bx h6:nth-child(8) {
   border: 3px solid #d93782;
 }
+
 .color_bx h6:nth-child(9) {
   border: 3px solid #c04442;
 }
+
 .color_bx h6:nth-child(10) {
   border: 3px solid #544b7a;
 }
+
 .color_bx h6:nth-child(11) {
   border: 3px solid #7a7b7f;
 }
+
 .color_bx h6:nth-child(12) {
   border: 3px solid #523d2a;
 }
+
 .color_bx h6:nth-child(13) {
   border: 3px solid #000;
 }
+
 .color_bx h6:nth-child(14) {
   border-top: 3px solid yellow;
   border-right: 3px solid green;
@@ -586,7 +602,8 @@ aside .filter_bx {
 
 /* -------For Pc size------------------------------------------------------------------------------- */
 
-header,section{
+header,
+section {
   width: 99.8%;
 }
 
@@ -623,7 +640,7 @@ header .brand_nav #selectCategory:nth-child(2){
 } */
 
 
-header .brand_nav #selectCategory:nth-child(4){
+header .brand_nav #selectCategory:nth-child(4) {
   border: 2px solid red;
   width: 30px;
   height: 30px;
